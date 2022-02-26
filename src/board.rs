@@ -15,7 +15,7 @@ pub fn new_board(width: usize, height: usize) -> Board {
         let mut x_cells: Vec<bool> = Vec::with_capacity(width);
         for _x in 0..width {
             let alive: u32 = rnd.gen_range(0..100);
-            x_cells.push(alive > 50);
+            x_cells.push(alive > 80);
         }
         cells.push(x_cells);
     }
